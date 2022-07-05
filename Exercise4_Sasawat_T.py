@@ -4,6 +4,7 @@ GB = 77.5
 ICS = 91.5
 CP = 87.5
 
+#แสดงผลคะแนนรายวิชาต่างๆ
 print("--- Your Score ---")
 print("Foundation English: ", FE)
 print("General Business: ", GB)
