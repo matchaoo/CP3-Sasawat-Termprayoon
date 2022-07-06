@@ -11,6 +11,7 @@ if username_input == "customer1" and password_input == "1234":
     print(">>>")
 
     select_category = int(input("Select Category Number: "))
+
     if select_category == 1:
         print("Item list")
         print("1. Rabbit doll   159 THB")
@@ -23,6 +24,7 @@ if username_input == "customer1" and password_input == "1234":
         doll_select = int(input("Please select your item: "))
         amount = int(input("Amount: "))
         print("------------------------")
+
         if doll_select == 1:
             total = amount*159
             print("Total", total, "THB")
@@ -50,7 +52,31 @@ if username_input == "customer1" and password_input == "1234":
         print("3. Cherry doll   109 THB")
         print("4. Coconut doll   89 THB")
         print("5. Grape doll     99 THB")
+        print(">>>")
+
+        fruit_select = int(input("Please select your item: "))
+        amount = int(input("Amount: "))
+        print("------------------------")
+        if fruit_select == 1:
+            total = amount * 89
+            print("Total", total, "THB")
+
+        elif fruit_select == 2:
+            total = amount * 99
+            print("Total", total, "THB")
+
+        elif fruit_select == 3:
+            total = amount * 109
+            print("Total", total, "THB")
+
+        elif fruit_select == 4:
+            total = amount * 89
+            print("Total", total, "THB")
+
+        elif fruit_select == 5:
+            total = amount * 99
+            print("Total", total, "THB")
 
 else:
-    print("Incorect username or password")
+    print("Invalid username or password")
     print("Try again")
