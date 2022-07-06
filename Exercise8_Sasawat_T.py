@@ -45,6 +45,9 @@ if username_input == "customer1" and password_input == "1234":
             total = amount*169
             print("Total", total, "THB")
 
+        else:
+            print("Try again")
+
     elif select_category == 2:
         print("Item list")
         print("1. Banana doll    89 THB")
@@ -76,6 +79,12 @@ if username_input == "customer1" and password_input == "1234":
         elif fruit_select == 5:
             total = amount * 99
             print("Total", total, "THB")
+
+        else:
+            print("Try agian")
+
+    else:
+        print("Try agian")
 
 else:
     print("Invalid username or password")
