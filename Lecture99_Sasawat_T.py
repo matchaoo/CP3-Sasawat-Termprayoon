@@ -25,7 +25,7 @@ def leftClickButton(event):
     labelBmi.configure(text=bmiShow)
 
 MainWindow = Tk()
-MainWindow.title = "BMI"
+MainWindow.title("BMI")
 MainWindow.minsize(width=300, height=300)
 MainWindow.maxsize(width=400, height=400)
 
