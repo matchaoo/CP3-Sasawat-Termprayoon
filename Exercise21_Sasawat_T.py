@@ -2,8 +2,6 @@ from tkinter import *
 import math
 
 def leftClickButton(event):
-    labelResult.configure(text=format(float(textBoxWeight.get())/math.pow(float(textBoxHeight.get())/100, 2), '.2f'))
-
     bmi = format(float(textBoxWeight.get()) / math.pow(float(textBoxHeight.get()) / 100, 2), '.2f')
     bmiShow = ""
 
@@ -23,6 +21,7 @@ def leftClickButton(event):
         bmiShow = "อ้วนมาก"
 
     labelBmi.configure(text=bmiShow)
+    labelResult.configure(text=bmi)
 
 MainWindow = Tk()
 MainWindow.title("BMI")
